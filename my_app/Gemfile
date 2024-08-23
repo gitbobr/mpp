@@ -68,3 +68,4 @@ end
 
 gem "bootstrap"
 gem 'dartsass-sprockets'
+gem 'devise'
