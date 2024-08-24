@@ -18474,3 +18474,839 @@ Started GET "/cable" for 127.0.0.1 at 2024-08-24 04:08:28 +0300
   ↳ lib/tasks/products.rake:11:in `block (2 levels) in <main>'
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
   ↳ lib/tasks/products.rake:11:in `block (2 levels) in <main>'
+  [1m[36mProduct Load (20.7ms)[0m  [1m[34mSELECT "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1000]]
+  ↳ lib/tasks/test.rake:3:in `block in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (10.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.1], ["updated_at", "2024-08-24 12:15:52.328240"], ["id", 1]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.379986"], ["id", 3]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 5.0], ["updated_at", "2024-08-24 12:15:52.385372"], ["id", 4]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.2], ["updated_at", "2024-08-24 12:15:52.391739"], ["id", 5]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.1], ["updated_at", "2024-08-24 12:15:52.398021"], ["id", 6]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.2], ["updated_at", "2024-08-24 12:15:52.403258"], ["id", 7]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.1], ["updated_at", "2024-08-24 12:15:52.408543"], ["id", 8]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.7], ["updated_at", "2024-08-24 12:15:52.413969"], ["id", 9]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.419588"], ["id", 10]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.9ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.1], ["updated_at", "2024-08-24 12:15:52.424903"], ["id", 11]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.0], ["updated_at", "2024-08-24 12:15:52.430460"], ["id", 12]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.6], ["updated_at", "2024-08-24 12:15:52.436091"], ["id", 13]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.2], ["updated_at", "2024-08-24 12:15:52.441274"], ["id", 14]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.9], ["updated_at", "2024-08-24 12:15:52.446411"], ["id", 15]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.1], ["updated_at", "2024-08-24 12:15:52.451802"], ["id", 16]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.2ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.2], ["updated_at", "2024-08-24 12:15:52.457689"], ["id", 17]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.8], ["updated_at", "2024-08-24 12:15:52.463503"], ["id", 18]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.4], ["updated_at", "2024-08-24 12:15:52.468785"], ["id", 19]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.3], ["updated_at", "2024-08-24 12:15:52.474273"], ["id", 20]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (8.4ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.8], ["updated_at", "2024-08-24 12:15:52.479501"], ["id", 21]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.6], ["updated_at", "2024-08-24 12:15:52.491387"], ["id", 22]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.0ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.7], ["updated_at", "2024-08-24 12:15:52.496530"], ["id", 23]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.7], ["updated_at", "2024-08-24 12:15:52.502898"], ["id", 24]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.1], ["updated_at", "2024-08-24 12:15:52.508073"], ["id", 25]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.6], ["updated_at", "2024-08-24 12:15:52.513367"], ["id", 26]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.9], ["updated_at", "2024-08-24 12:15:52.519608"], ["id", 27]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.7], ["updated_at", "2024-08-24 12:15:52.524733"], ["id", 28]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.3], ["updated_at", "2024-08-24 12:15:52.530562"], ["id", 29]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.3], ["updated_at", "2024-08-24 12:15:52.535625"], ["id", 30]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.0], ["updated_at", "2024-08-24 12:15:52.541947"], ["id", 31]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.7], ["updated_at", "2024-08-24 12:15:52.547126"], ["id", 32]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.7], ["updated_at", "2024-08-24 12:15:52.552361"], ["id", 33]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.0], ["updated_at", "2024-08-24 12:15:52.558927"], ["id", 35]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.2], ["updated_at", "2024-08-24 12:15:52.564204"], ["id", 36]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.2], ["updated_at", "2024-08-24 12:15:52.570021"], ["id", 37]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.2], ["updated_at", "2024-08-24 12:15:52.575113"], ["id", 38]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.7], ["updated_at", "2024-08-24 12:15:52.580529"], ["id", 39]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.586365"], ["id", 40]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.4], ["updated_at", "2024-08-24 12:15:52.591590"], ["id", 41]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.597373"], ["id", 42]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.9], ["updated_at", "2024-08-24 12:15:52.603061"], ["id", 43]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.7], ["updated_at", "2024-08-24 12:15:52.608037"], ["id", 44]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (4.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.5], ["updated_at", "2024-08-24 12:15:52.613236"], ["id", 45]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.6], ["updated_at", "2024-08-24 12:15:52.621791"], ["id", 46]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.0], ["updated_at", "2024-08-24 12:15:52.627173"], ["id", 47]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.0], ["updated_at", "2024-08-24 12:15:52.633525"], ["id", 48]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.3], ["updated_at", "2024-08-24 12:15:52.638611"], ["id", 49]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.3], ["updated_at", "2024-08-24 12:15:52.645180"], ["id", 50]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.8], ["updated_at", "2024-08-24 12:15:52.650194"], ["id", 51]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.5ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.9], ["updated_at", "2024-08-24 12:15:52.655265"], ["id", 52]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.1], ["updated_at", "2024-08-24 12:15:52.661958"], ["id", 53]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.667004"], ["id", 54]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.1], ["updated_at", "2024-08-24 12:15:52.672615"], ["id", 55]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.8], ["updated_at", "2024-08-24 12:15:52.677853"], ["id", 56]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.8], ["updated_at", "2024-08-24 12:15:52.683539"], ["id", 57]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.2], ["updated_at", "2024-08-24 12:15:52.688650"], ["id", 58]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.2ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.7], ["updated_at", "2024-08-24 12:15:52.693818"], ["id", 59]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.6], ["updated_at", "2024-08-24 12:15:52.699922"], ["id", 60]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.6], ["updated_at", "2024-08-24 12:15:52.705128"], ["id", 61]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.7], ["updated_at", "2024-08-24 12:15:52.711156"], ["id", 62]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.716677"], ["id", 63]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.5], ["updated_at", "2024-08-24 12:15:52.722005"], ["id", 64]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.727707"], ["id", 65]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.0ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.6], ["updated_at", "2024-08-24 12:15:52.732868"], ["id", 66]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.5], ["updated_at", "2024-08-24 12:15:52.738347"], ["id", 67]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (4.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.9], ["updated_at", "2024-08-24 12:15:52.743973"], ["id", 68]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.7], ["updated_at", "2024-08-24 12:15:52.751866"], ["id", 69]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.2], ["updated_at", "2024-08-24 12:15:52.757450"], ["id", 70]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.7], ["updated_at", "2024-08-24 12:15:52.763487"], ["id", 71]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.9], ["updated_at", "2024-08-24 12:15:52.768801"], ["id", 72]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.7], ["updated_at", "2024-08-24 12:15:52.773880"], ["id", 73]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.0], ["updated_at", "2024-08-24 12:15:52.779683"], ["id", 74]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.7], ["updated_at", "2024-08-24 12:15:52.785113"], ["id", 75]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.8], ["updated_at", "2024-08-24 12:15:52.790817"], ["id", 76]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.7], ["updated_at", "2024-08-24 12:15:52.796199"], ["id", 77]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.2], ["updated_at", "2024-08-24 12:15:52.801930"], ["id", 78]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.7], ["updated_at", "2024-08-24 12:15:52.806948"], ["id", 79]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.6], ["updated_at", "2024-08-24 12:15:52.811912"], ["id", 80]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.0ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.3], ["updated_at", "2024-08-24 12:15:52.817494"], ["id", 81]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.1], ["updated_at", "2024-08-24 12:15:52.822941"], ["id", 82]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.1], ["updated_at", "2024-08-24 12:15:52.828617"], ["id", 83]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.9ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.2], ["updated_at", "2024-08-24 12:15:52.833634"], ["id", 84]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.8], ["updated_at", "2024-08-24 12:15:52.839025"], ["id", 85]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.5], ["updated_at", "2024-08-24 12:15:52.844741"], ["id", 86]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.4], ["updated_at", "2024-08-24 12:15:52.849781"], ["id", 87]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.4], ["updated_at", "2024-08-24 12:15:52.855424"], ["id", 88]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.0ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.0], ["updated_at", "2024-08-24 12:15:52.861094"], ["id", 89]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.0], ["updated_at", "2024-08-24 12:15:52.866643"], ["id", 90]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.6], ["updated_at", "2024-08-24 12:15:52.871702"], ["id", 91]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.0], ["updated_at", "2024-08-24 12:15:52.879975"], ["id", 92]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.9], ["updated_at", "2024-08-24 12:15:52.885462"], ["id", 93]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.9], ["updated_at", "2024-08-24 12:15:52.891841"], ["id", 94]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.2ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.7], ["updated_at", "2024-08-24 12:15:52.897171"], ["id", 95]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.4ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.0], ["updated_at", "2024-08-24 12:15:52.903172"], ["id", 96]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.4], ["updated_at", "2024-08-24 12:15:52.909090"], ["id", 97]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.3], ["updated_at", "2024-08-24 12:15:52.914407"], ["id", 98]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.3], ["updated_at", "2024-08-24 12:15:52.920869"], ["id", 99]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.9], ["updated_at", "2024-08-24 12:15:52.926031"], ["id", 100]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.2ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.5], ["updated_at", "2024-08-24 12:15:52.931133"], ["id", 101]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.0ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.4], ["updated_at", "2024-08-24 12:15:52.936679"], ["id", 102]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.7], ["updated_at", "2024-08-24 12:15:52.942136"], ["id", 103]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.2], ["updated_at", "2024-08-24 12:15:52.947878"], ["id", 104]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.4], ["updated_at", "2024-08-24 12:15:52.952911"], ["id", 105]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.8], ["updated_at", "2024-08-24 12:15:52.958342"], ["id", 106]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.9ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.2], ["updated_at", "2024-08-24 12:15:52.964589"], ["id", 107]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.2], ["updated_at", "2024-08-24 12:15:52.972853"], ["id", 108]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.8], ["updated_at", "2024-08-24 12:15:52.979899"], ["id", 109]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.1ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.7], ["updated_at", "2024-08-24 12:15:52.986433"], ["id", 110]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 5.0], ["updated_at", "2024-08-24 12:15:52.992861"], ["id", 111]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.5], ["updated_at", "2024-08-24 12:15:53.000113"], ["id", 112]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.6], ["updated_at", "2024-08-24 12:15:53.006005"], ["id", 113]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.3], ["updated_at", "2024-08-24 12:15:53.011078"], ["id", 114]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.8], ["updated_at", "2024-08-24 12:15:53.018988"], ["id", 115]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.2], ["updated_at", "2024-08-24 12:15:53.024246"], ["id", 116]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.3], ["updated_at", "2024-08-24 12:15:53.030610"], ["id", 118]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.8], ["updated_at", "2024-08-24 12:15:53.035699"], ["id", 119]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (3.1ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.8], ["updated_at", "2024-08-24 12:15:53.040760"], ["id", 120]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.6], ["updated_at", "2024-08-24 12:15:53.047496"], ["id", 121]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.4], ["updated_at", "2024-08-24 12:15:53.052677"], ["id", 122]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.1], ["updated_at", "2024-08-24 12:15:53.058583"], ["id", 123]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.7], ["updated_at", "2024-08-24 12:15:53.064002"], ["id", 124]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.2ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.8], ["updated_at", "2024-08-24 12:15:53.069119"], ["id", 125]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.1], ["updated_at", "2024-08-24 12:15:53.074786"], ["id", 126]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.2], ["updated_at", "2024-08-24 12:15:53.079872"], ["id", 127]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.8], ["updated_at", "2024-08-24 12:15:53.085979"], ["id", 128]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.0], ["updated_at", "2024-08-24 12:15:53.091122"], ["id", 129]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.4ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.5], ["updated_at", "2024-08-24 12:15:53.096187"], ["id", 130]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.5], ["updated_at", "2024-08-24 12:15:53.102312"], ["id", 131]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.6], ["updated_at", "2024-08-24 12:15:53.107450"], ["id", 132]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.0], ["updated_at", "2024-08-24 12:15:53.113054"], ["id", 133]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.6ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.0], ["updated_at", "2024-08-24 12:15:53.118079"], ["id", 134]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.3ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.8], ["updated_at", "2024-08-24 12:15:53.123326"], ["id", 135]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.9ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.2], ["updated_at", "2024-08-24 12:15:53.129211"], ["id", 136]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 2.9], ["updated_at", "2024-08-24 12:15:53.134574"], ["id", 137]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.1], ["updated_at", "2024-08-24 12:15:53.140280"], ["id", 138]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.3], ["updated_at", "2024-08-24 12:15:53.148270"], ["id", 139]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.8ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 1.7], ["updated_at", "2024-08-24 12:15:53.153513"], ["id", 140]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (2.0ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 3.1], ["updated_at", "2024-08-24 12:15:53.160490"], ["id", 141]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mProduct Update (1.7ms)[0m  [1m[33mUPDATE "products" SET "rating" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["rating", 4.1], ["updated_at", "2024-08-24 12:15:53.166785"], ["id", 143]]
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ lib/tasks/test.rake:4:in `block (2 levels) in <main>'
