@@ -43,6 +43,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_08_22_221031) do
     t.integer "price"
     t.float "rating"
     t.integer "quantity"
+    t.string "image_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["category_id"], name: "index_products_on_category_id"

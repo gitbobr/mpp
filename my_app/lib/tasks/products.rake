@@ -14,7 +14,8 @@ task products: :environment do
         description: "Material: #{['Wood','Metal','Plastic'].sample}; Color: #{['Blue','Red','Green'].sample}", 
         price: rand(500..10000), 
         rating: rand(1.0..5.0).round(1), 
-        quantity: rand(1..1000))
+        quantity: rand(1..1000),
+		    image_name: "#{rand(1..5)}.jpg")
     end
 	puts 'Created products'
 end

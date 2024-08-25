@@ -1,0 +1,31 @@
+<div class="container mt-4">
+	<div class="row justify-content-center mx-3 mb-5">
+	    <div class="col-md-4">
+		    <p class="text-center h3"><%= @product.product_name %></p>
+		    <p class="text-center h5">
+		        <% for i in 1..5 %>
+		            <% if i <= @product.rating %>
+		                ★ 
+		            <% else %>
+		                ☆ 
+		            <% end %>
+		        <% end %>
+		        (<%= @product.rating %>)
+		    </p>
+		    <p class="text-center h5">Category: <%= @category.category_name %></p>
+		    <p class="text-center h5"><%= @product.description %></p>
+	    </div>
+	    <div class="col-md-4">
+	    	<img src="<%= image_url(@product.image_name) %>"
+	        alt="loading..." class="mx-auto img-thumbnail" width="400" height="400">
+	    </div>
+	    <div class="col-md-4 r">
+	    	<p class="text-center h4"><%= @product.price %> ₴</p>
+	    	<div class="d-grid gap-2 col-6 mx-auto">
+	    		<button type="button" class="btn btn-success btn-lg">To cart</button>
+	    		<p class="text-center h6">In stock: <%= @product.quantity %></p>
+	    	</div>
+	    	<p class="text-center h6">ID: <%= @product.id %></p>
+	    </div>
+	</div>
+</div>

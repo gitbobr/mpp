@@ -1,2 +1,39 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<h1 class="text-center mb-3"><%= @products_title %></h1>
+<div class="container mt-4">
+    <%= form_with(method: "get", local: true, html: { class: "d-flex flex-wrap justify-content-center align-items-center gap-2" }) do %>
+    <p class="h4">Order by: </p>
+    <div class="form-group mb-2">
+      <%= select_tag :sort_by, options_for_select([['Rating', 'rating'], ['Price', 'price']],
+                                                  params[:sort_by]), class: "form-control", onchange: 'this.form.submit();' %>
+    </div>
+    <div class="form-group mb-2">
+      <%= select_tag :direction, options_for_select([%w[Ascending asc], %w[Descending desc]],
+                                                    params[:direction]), class: "form-control", onchange: 'this.form.submit();' %>
+    </div>
+    <% end %>
+  <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+    <% @products.each do |product| %>
+      <div class="col">
+          <div class="card shadow-sm d-flex flex-column h-100">
+            <img src="<%= image_url(product.image_name) %>"
+            alt="loading..." class="mx-auto" width="300" height="300">
+            <div class="card-body">
+                <a href="/products/<%= product.id %>" class="list-group-item list-group-item-action mb-2">
+                <p class="card-text text-center h3"><%= product.product_name %></p>
+                <p class="card-text text-center h6">
+                <% for i in 1..5 %>
+                    <% if i <= product.rating %>
+                    ★ 
+                    <% else %>
+                    ☆ 
+                    <% end %>
+                <% end %>
+                (<%= product.rating %>)</p>
+              <p class="card-text text-center h6"><%= product.price %> ₴</p>
+              </a>
+            </div>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>

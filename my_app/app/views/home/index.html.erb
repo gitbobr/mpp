@@ -1,16 +1,22 @@
-<h1>Main page of furniture shop</h1>
 <h1 class="text-center mb-3">Categories</h1>
-
 <div class="row justify-content-center mx-3 mb-5">
   <% @categories.each_slice(3) do |group| %>
     <div class="col-md-4">
       <div class="list-group">
-        <% group.each do |category| %>
+      <% group.each do |category| %>
 			<a href="/categories/<%= category.id %>" class="list-group-item list-group-item-action mb-2">
 			<%= category.category_name %>
 			</a>
-        <% end %>
+      <% end %>
       </div>
     </div>
   <% end %>
 </div>
+<div class="row justify-content-center mx-3 mb-5">
+    <div class="col-md-4">
+      <div class="list-group">
+        <a href="/categories/0" class="list-group-item list-group-item-action list-group-item-dark mb-2 text-center">All furniture</a>
+      </div>
+    </div>
+</div>
+
