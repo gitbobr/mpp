@@ -8,7 +8,13 @@
 | GET                           | /                                                                                                                     | Головна сторінка                                                  |
 | GET, POST, DELETE             | /users/sign_in, /users/sign_out, /users/password/new | Авторизація, реєстрація, скидання пароля |
 | GET | /categories/:id                           | Товари вказаної категорії                                            |
-| GET | /products/:id                           | Інформація про продукт                                            |
+| GET | /products/:id                           | Інформація про товар                                           |
+| GET | /orders                           | Кошик користувача                                           |
+| GET | /profile                           | Профіль користувача                                           |
+| POST | /orders/add_to_cart                          | Додати товар до кошика                                           |
+| DELETE | /orders/:id                          | Видалити замовлення                                          |
+| POST | /orders/update_quantity/:id                         | Змінити кількість товару у кошику                                          |
+| POST | /orders/checkout                        | Оформити замовлення                                          |
 ## Діаграми
 ![ERD](diagram.png "ER-діаграма")
 
