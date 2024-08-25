@@ -23,4 +23,7 @@ rake categories
 rake products
 ```
 Запуск сервера:
-```rails s```
+```
+rails s
+```
+Після цього додаток доступний за посиланням http://localhost:3000
