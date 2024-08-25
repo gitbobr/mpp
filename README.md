@@ -6,4 +6,6 @@
 ![ERD](diagram.png "ER-діаграма")
 
 ## Скрипти
-- parsing.rb - зібрати дані про лікарні і створити data.csv
+- parsing.rb - зібрати дані про лікарні і створити data.csv  
+- categories.rake - заповнити базу категоріями товарів  
+- products.rake - заповнити базу товарами
