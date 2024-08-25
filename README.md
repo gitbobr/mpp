@@ -6,7 +6,7 @@
 | HTTP-метод                    | Шлях (URL)                                                                                                            | Дія                                                               |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
 | GET                           | /                                                                                                                     | Головна сторінка                                                  |
-| GET, POST, DELETE             | /users/sign_in, /users/sign_out, /users/password/new, /producers/sign_in, /producers/sign_out, /producers/password/new | Авторизація, реєстрація, скидання пароля користувача та виробника |
+| GET, POST, DELETE             | /users/sign_in, /users/sign_out, /users/password/new | Авторизація, реєстрація, скидання пароля |
 | GET, POST, PUT, DELETE, PATCH | /users, /products, /categories, /subcategories, /producers, /order-items, /orders, /reviews                           | Операції з сутностями                                             |
 ## Діаграми
 ![ERD](diagram.png "ER-діаграма")
