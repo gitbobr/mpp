@@ -16,7 +16,7 @@
 | POST | /orders/update_quantity/:id                         | Змінити кількість товару у кошику                                          |
 | POST | /orders/checkout                        | Оформити замовлення                                          |
 ## Діаграми
-![ERD](diagram.png "ER-діаграма")
+![ERD](docs/diagram.png "ER-діаграма")
 
 ## Скрипти
 - parsing.rb - зібрати дані про лікарні і створити data.csv  
