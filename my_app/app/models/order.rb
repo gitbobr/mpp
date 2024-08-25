@@ -1,3 +1,4 @@
 class Order < ApplicationRecord
-  belongs_to :user
+	has_many :order_products, :dependent => :destroy
+	belongs_to :user
 end

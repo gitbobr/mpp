@@ -1,4 +1,14 @@
 <div class="container mt-4">
+	<% if notice=='The item is successfully added to the cart' %>
+		<div class="alert alert-success text-center" role="alert">
+	  	<%= notice %>
+		</div>
+	<% end %>
+	<% if alert=='The item is already in the cart' %>
+		<div class="alert alert-danger text-center" role="alert">
+	  	<%= alert %>
+		</div>
+	<% end %>
 	<div class="row justify-content-center mx-3 mb-5">
 	    <div class="col-md-4">
 		    <p class="text-center h3"><%= @product.product_name %></p>
@@ -19,12 +29,12 @@
 	    	<img src="<%= image_url(@product.image_name) %>"
 	        alt="loading..." class="mx-auto img-thumbnail" width="400" height="400">
 	    </div>
-	    <div class="col-md-4 r">
+	    <div class="col-md-4">
 	    	<p class="text-center h4"><%= @product.price %> ₴</p>
-	    	<div class="d-grid gap-2 col-6 mx-auto">
-	    		<button type="button" class="btn btn-success btn-lg">To cart</button>
-	    		<p class="text-center h6">In stock: <%= @product.quantity %></p>
+	    	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+	    	<%= button_to "To cart", add_to_cart_path(product_id: @product.id), method: :post, class: "btn btn-success btn-lg" %>
 	    	</div>
+	    	<p class="text-center h6">In stock: <%= @product.quantity %></p>
 	    	<p class="text-center h6">ID: <%= @product.id %></p>
 	    </div>
 	</div>

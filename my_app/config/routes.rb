@@ -4,4 +4,12 @@ Rails.application.routes.draw do
   root to: 'home#index'
   get "/categories/:id", to: "categories#show"
   get "/products/:id", to: "products#show"
+  
+   get '/orders', to: 'orders#index'
+   post '/orders/add_to_cart', to: 'orders#add_to_cart', as: 'add_to_cart'
+   delete '/orders/:id', to: 'orders#destroy'
+   post '/orders/update_quantity/:id', to: 'orders#update_quantity', as: 'update_quantity'
+   
+   post '/checkout', to: 'orders#checkout', as: 'checkout'
+   get '/profile', to: 'profile#index'
 end

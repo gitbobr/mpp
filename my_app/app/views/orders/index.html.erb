@@ -1,0 +1,45 @@
+<div class="container mt-4">
+<% if notice=="The order has been successfully created and added to your profile" %>
+		<div class="alert alert-success text-center" role="alert">
+	  	<%= notice %>
+		</div>
+<% end %>
+<% if alert=="The cart is empty" %>
+		<div class="alert alert-danger text-center" role="alert">
+	  	<%= alert %>
+		</div>
+<% end %>
+<p class="text-center h3">Cart</p>
+<div class="table-responsive mx-auto mt-3">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th class="w-10">Name</th>
+        <th class="w-10">Price</th>
+        <th class="w-10">Amount</th>
+        <th class="w-10"></th>
+      </tr>
+      </thead>
+      <tbody>
+	    <% @order_items.each do |order_item| %>
+	        <tr>
+	          <td><%= order_item.product.product_name %></td>
+	          <td><%= order_item.product.price %> ₴</td>
+	          <td><%= order_item.amount %></td>
+	          <td>
+	          <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+	          <%= button_to '➕', update_quantity_path(order_item.id, quantity: order_item.amount + 1), method: :post, class: 'btn btn-outline-secondary btn-sm' %>
+	          <%= button_to '➖', update_quantity_path(order_item.id, quantity: order_item.amount - 1), method: :post, class: 'btn btn-outline-secondary btn-sm' %>
+	        	</div>
+	          </td>
+	        </tr>
+      	<% end %>
+      </tbody>
+    </table>
+</div>
+<p class="h4">Total: 
+<% sm = 0 %>
+<% @order_items.each {|order_item| sm += order_item.product.price * order_item.amount} %>
+<%= sm %> ₴</p>
+<%= button_to "Create order", checkout_path, method: :post, class: "btn btn-success btn-lg" %>
+</div>
