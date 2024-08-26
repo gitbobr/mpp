@@ -12,7 +12,7 @@
 	    	<p class="h5">Address: <%= @user.delivery_address %></p>
 	    	<div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
 	    	<%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-outline-secondary"  %>
-	    	<%= button_to "Delete account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete, class: "btn btn-outline-danger"  %>
+	    	<%= button_to "Delete account", registration_path(current_user), ata: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete, class: "btn btn-outline-danger"  %>
 	    	</div>
 	    </div>
 	</div>

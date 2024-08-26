@@ -1,14 +1,4 @@
 <div class="container mt-4">
-	<% if notice=='The item is successfully added to the cart' %>
-		<div class="alert alert-success text-center" role="alert">
-	  	<%= notice %>
-		</div>
-	<% end %>
-	<% if alert=='The item is already in the cart' %>
-		<div class="alert alert-danger text-center" role="alert">
-	  	<%= alert %>
-		</div>
-	<% end %>
 	<div class="row justify-content-center mx-3 mb-5">
 	    <div class="col-md-4">
 		    <p class="text-center h3"><%= @product.product_name %></p>
